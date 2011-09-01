@@ -18,4 +18,5 @@ rsa_bundles:\
 	com.paremus.google.guava,\
 	osgi.enterprise,\
 	slf4j.api,\
-	slf4j.simple
+	ch.qos.logback.classic,\
+	ch.qos.logback.core
