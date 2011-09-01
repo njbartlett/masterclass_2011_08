@@ -4,13 +4,13 @@ import java.io.PrintStream;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.atomic.AtomicReference;
 
 import org.apache.felix.shell.Command;
 import org.example.auction.AuctionItem;
 import org.example.auction.AuctionService;
 
-import aQute.bnd.annotation.component.*;
+import aQute.bnd.annotation.component.Component;
+import aQute.bnd.annotation.component.Reference;
 
 @Component
 public class AuctionCommand implements Command {
@@ -43,21 +43,6 @@ public class AuctionCommand implements Command {
 		auctions.remove(auction);
 	}
 	
-	public AuctionCommand() {
-		System.out.println("Created AuctionCommand");
-	}
-	
-	@Activate
-	protected void activate() {
-		System.out.println("AuctionCommand activated");
-	}
-	
-	@Deactivate
-	protected void deactivate() {
-		System.out.println("AuctionCommand deactivated");
-	}
-
-
 	@Override
 	public String getName() {
 		return "auction";

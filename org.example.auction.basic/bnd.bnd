@@ -1,6 +1,5 @@
 Private-Package: org.example.auction.basic,\
 	org.apache.commons.csv,\
-	org.example.auction.utils.impl,\
 	aQute.bnd.annotation.metatype
 -runfw: org.apache.felix.framework;version=3.2.2
 -runbundles: osgi.cmpn,\

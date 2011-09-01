@@ -1,0 +1,12 @@
+-include: lib-nimblersa.bndrun
+
+-runfw: org.apache.felix.framework
+-runsystempackages: sun.misc
+-runstorage: generated/fw-client
+-runproperties: org.apache.felix.http.debug=true,\
+	org.osgi.service.http.port=8082
+
+
+-runbundles: ${rsa_bundles},\
+	${common_bundles},\
+	org.example.auction.cli;version=latest

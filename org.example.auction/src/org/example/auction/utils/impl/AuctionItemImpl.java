@@ -1,5 +1,6 @@
 package org.example.auction.utils.impl;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.Date;
 import java.util.LinkedList;
@@ -9,7 +10,9 @@ import org.example.auction.AuctionItem;
 import org.example.auction.Bid;
 import org.example.auction.InvalidBidException;
 
-public class AuctionItemImpl implements AuctionItem {
+public class AuctionItemImpl implements AuctionItem, Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	private final String id;
 	private final String description;

@@ -23,6 +23,3 @@ Conditional-Package: org.example.utils.*
 	org.apache.felix.shell.tui,\
 	org.example.auction.basic;version=latest,\
 	org.apache.felix.eventadmin
--runproperties: org.apache.felix.http.debug=true,\
-	osgi.console=,\
-	org.osgi.service.http.port=8080

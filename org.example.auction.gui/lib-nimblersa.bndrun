@@ -1,0 +1,21 @@
+common_bundles:\
+	org.example.auction.api;version=latest,\
+	org.apache.felix.shell,\
+	org.apache.felix.shell.tui,\
+	org.apache.felix.scr,\
+	org.apache.felix.webconsole,\
+	org.apache.felix.http.jetty,\
+	javax.servlet,\
+	org.apache.felix.log
+
+rsa_bundles:\
+	com.paremus.dosgi,\
+	com.paremus.dosgi.discovery,\
+	com.paremus.dosgi.discovery.slp,\
+	com.paremus.dosgi.dsw,\
+	com.paremus.dosgi.dsw.essencermi,\
+	com.paremus.dosgi.topologymanager,\
+	com.paremus.google.guava,\
+	osgi.enterprise,\
+	slf4j.api,\
+	slf4j.simple

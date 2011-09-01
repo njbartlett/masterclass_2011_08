@@ -1,1 +1,2 @@
-Export-Package: org.example.auction
+Export-Package: org.example.auction,\
+	org.example.auction.utils.impl

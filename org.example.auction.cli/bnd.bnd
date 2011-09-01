@@ -1,10 +1,12 @@
+Service-Component: *
 Private-Package: org.example.auction.cli
+Import-Package: org.example.auction.utils.impl,*
+
 -runstorage: fw_${random}
 -runbundles: osgi.cmpn,\
 	org.apache.felix.scr,\
 	org.apache.felix.shell,\
 	org.apache.felix.shell.tui
-Service-Component: *
 -runfw: org.apache.felix.framework
 -buildpath: osgi.core,\
 	osgi.cmpn,\

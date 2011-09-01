@@ -12,12 +12,12 @@ import org.example.auction.utils.impl.AuctionServiceImpl;
 
 import aQute.bnd.annotation.component.Activate;
 import aQute.bnd.annotation.component.Component;
-import aQute.bnd.annotation.component.ConfigurationPolicy;
-import aQute.bnd.annotation.component.Reference;
 import aQute.bnd.annotation.metatype.Configurable;
 import aQute.bnd.annotation.metatype.Meta;
 
-@Component(provide = AuctionService.class)
+@Component(provide = AuctionService.class,
+	properties = { "service.exported.interfaces=*",
+	               "service.exported.configs=com.paremus.dosgi.essencermi" })
 public class ExampleComponent extends AuctionServiceImpl {
 	
 	interface Config {
@@ -49,11 +49,6 @@ public class ExampleComponent extends AuctionServiceImpl {
 			
 			addItem(description, new Date(), Long.parseLong(priceStr));
 		}
-	}
-
-	@Reference
-	public void setTask(Runnable task) {
-		System.out.println("Bound to a task");
 	}
 
 }

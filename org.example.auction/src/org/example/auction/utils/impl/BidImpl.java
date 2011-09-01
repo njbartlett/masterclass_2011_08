@@ -1,11 +1,14 @@
 package org.example.auction.utils.impl;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import org.example.auction.AuctionItem;
 import org.example.auction.Bid;
 
-public class BidImpl implements Bid {
+public class BidImpl implements Bid, Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	private final String id;
 	private final long price;
