@@ -139,7 +139,8 @@ public class TradeTab extends ConcurrentComponent implements UriFragmentHandler,
 	@Reference(type = '*')
 	public void addAuction(final AuctionService auction, Map<String, Object> properties) {
 		String pid = (String) properties.get(Constants.SERVICE_PID);
-		auctions.put(pid, auction);
+		if (pid != null)
+			auctions.put(pid, auction);
 		
 		final Collection<AuctionItem> items = auction.listAuctionItems();
 		executeUpdate(new Runnable() {
@@ -152,8 +153,9 @@ public class TradeTab extends ConcurrentComponent implements UriFragmentHandler,
 	}
 	public void removeAuction(final AuctionService auction, Map<String, Object> properties) {
 		String pid = (String) properties.get(Constants.SERVICE_PID);
-
-		auctions.remove(pid);
+		if (pid != null)
+			auctions.remove(pid);
+		
 		executeUpdate(new Runnable() {
 			public void run() {
 				List<Object> itemIds = new ArrayList<Object>(itemContainer.getItemIds());

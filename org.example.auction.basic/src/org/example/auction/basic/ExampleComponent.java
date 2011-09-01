@@ -16,7 +16,8 @@ import aQute.bnd.annotation.metatype.Configurable;
 import aQute.bnd.annotation.metatype.Meta;
 
 @Component(provide = AuctionService.class,
-	properties = { "service.exported.interfaces=*",
+	properties = { "label=Neil",
+	               "service.exported.interfaces=*",
 	               "service.exported.configs=com.paremus.dosgi.essencermi" })
 public class ExampleComponent extends AuctionServiceImpl {
 	

@@ -9,4 +9,8 @@
 
 -runbundles: ${rsa_bundles},\
 	${common_bundles},\
-	org.example.auction.cli;version=latest
+	org.example.auction.cli;version=latest,\
+	org.example.auction.gui.app;version=latest,\
+	org.example.auction.gui.sell;version=latest,\
+	com.vaadin,\
+	name.njbartlett.osgi.vaadin.core

@@ -8,6 +8,10 @@ common_bundles:\
 	javax.servlet,\
 	org.apache.felix.log
 
+logging_full:\
+	ch.qos.logback.classic,\
+	ch.qos.logback.core
+
 rsa_bundles:\
 	com.paremus.dosgi,\
 	com.paremus.dosgi.discovery,\
@@ -18,5 +22,4 @@ rsa_bundles:\
 	com.paremus.google.guava,\
 	osgi.enterprise,\
 	slf4j.api,\
-	ch.qos.logback.classic,\
-	ch.qos.logback.core
+	${logging_full}
