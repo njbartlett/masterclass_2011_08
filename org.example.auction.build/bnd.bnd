@@ -1,0 +1,5 @@
+-nobundles: true
+-dependson:\
+	org.example.auction.jpa,\
+	org.example.auction.gui,\
+	org.example.auction.basic

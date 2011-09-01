@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="build"> 
+	<import file="../cnf/build.xml"/>
+	<target name="release.bindex" depends="release">
+		<echo message="bindex classpath: ${workspacedir}/cnf/repo/org.osgi.impl.bundle.bindex/org.osgi.impl.bundle.bindex-2.2.0.jar"/>
+		<taskdef name="bindex" classname="org.osgi.impl.bundle.bindex.ant.BindexTask">
+			<classpath>
+				<fileset dir="${workspacedir}/cnf/repo/org.osgi.impl.bundle.bindex" includes="org.osgi.impl.bundle.bindex-2.2.0.jar"/>
+			</classpath>
+		</taskdef>
+		
+		<bindex root="${workspacedir}/cnf/releaserepo" repositoryfile="${workspacedir}/cnf/releaserepo/repository.xml" quiet="yes">
+			<fileset dir="${workspacedir}/cnf/releaserepo" includes="**/*.jar"/>
+		</bindex>
+	</target>
+</project>
