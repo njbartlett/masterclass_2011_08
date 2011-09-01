@@ -1,0 +1,14 @@
+Service-Component: *
+Meta-Persistence: <<EMPTY>>
+Import-Package: org.apache.derby.jdbc,*
+
+Private-Package: org.example.auction.jpa,\
+	org.example.auction.jpa.domain
+Include-Resource: META-INF/=persistence
+
+-buildpath: org.example.auction;version=project,\
+	osgi.core,\
+	biz.aQute.bnd.annotation,\
+	junit.osgi,\
+	osgi.enterprise,\
+	com.springsource.javax.persistence

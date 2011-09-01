@@ -1,0 +1,21 @@
+-include: jpa.bndrun
+
+-runfw: org.eclipse.osgi
+-runbundles: org.apache.felix.shell,\
+	org.apache.felix.shell.tui,\
+	org.example.auction.api;version=latest,\
+	org.example.auction.jpa;version=latest,\
+	${jpa_bundles},\
+	org.apache.felix.webconsole,\
+	javax.servlet,\
+	org.apache.felix.http.jetty,\
+	osgi.enterprise,\
+	org.apache.felix.scr,\
+	org.example.auction.cli;version=latest,\
+	com.vaadin,\
+	name.njbartlett.osgi.vaadin.core,\
+	javax.portlet,\
+	org.example.auction.gui.app;version=latest,\
+	org.example.auction.gui.sell;version=latest,\
+	org.apache.felix.eventadmin,\
+	org.apache.felix.log
