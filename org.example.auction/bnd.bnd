@@ -1,0 +1,11 @@
+-sub: *.bnd
+-runfw: org.apache.felix.framework;version=3.2.2
+-runbundles: org.apache.felix.shell,\
+	org.apache.felix.shell.tui,\
+	org.apache.felix.webconsole,\
+	org.apache.felix.http.jetty,\
+	org.apache.felix.metatype,\
+	org.apache.felix.configadmin,\
+	org.apache.felix.scr,\
+	org.apache.felix.log,\
+	javax.servlet

@@ -1,0 +1,19 @@
+Test-Cases: ${classes;CONCRETE;EXTENDS;junit.framework.TestCase}
+Private-Package: org.example.tests
+-buildpath: osgi.core;version=[4.1','5),\
+	osgi.cmpn,\
+	junit.osgi,\
+	org.mockito.mockito-all,\
+	org.example.auction.api;version=latest
+-runvm: -ea
+-runfw: org.apache.felix.framework
+-runsystempackages: sun.reflect
+-runbundles:\
+	org.mockito.mockito-all,\
+	org.example.auction.basic;version=latest,\
+	org.example.auction.api;version=latest,\
+	org.apache.felix.scr,\
+	osgi.cmpn,\
+	org.apache.felix.shell,\
+	org.apache.felix.shell.tui
+	

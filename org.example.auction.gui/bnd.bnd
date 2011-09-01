@@ -1,0 +1,28 @@
+Conditional-Package: org.example.utils.*
+
+-sub: *.bnd
+-buildpath: biz.aQute.bnd.annotation,\
+	com.vaadin,\
+	name.njbartlett.osgi.vaadin.core,\
+	osgi.cmpn,\
+	org.example.auction.api;version=latest,\
+	osgi.core
+	
+-runfw: org.apache.felix.framework;version=3.2.2
+-runbundles: osgi.cmpn,\
+	org.apache.felix.scr,\
+	org.apache.felix.shell,\
+	com.vaadin,\
+	javax.servlet,\
+	org.apache.felix.webconsole,\
+	org.apache.felix.configadmin,\
+	org.apache.felix.metatype,\
+	name.njbartlett.osgi.vaadin.core,\
+	org.example.auction.api;version=latest,\
+	org.apache.felix.http.jetty,\
+	org.apache.felix.shell.tui,\
+	org.example.auction.basic;version=latest,\
+	org.apache.felix.eventadmin
+-runproperties: org.apache.felix.http.debug=true,\
+	osgi.console=,\
+	org.osgi.service.http.port=8080

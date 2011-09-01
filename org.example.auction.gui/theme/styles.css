@@ -1,0 +1,42 @@
+@import "../reindeer/styles.css";
+
+/* Table Styles: noheader, nolines */
+.v-table-noheader .v-table-header-wrap {
+	display: none;
+}
+.v-table-nolines .v-table-body {
+	border: none;
+}
+
+/* Hidden progress indicator for auto-update pages */
+.v-progressindicator-hidden {
+	display: none;
+}
+
+/* 5px margins on layouts */
+.v-horizontallayout-margin-top,
+.v-verticallayout-margin-top {
+	padding-top: 5px;
+}
+.v-orderedlayout-margin-right,
+.v-horizontallayout-margin-right,
+.v-verticallayout-margin-right {
+	padding-right: 5px;
+}
+.v-orderedlayout-margin-bottom,
+.v-horizontallayout-margin-bottom,
+.v-verticallayout-margin-bottom {
+	padding-bottom: 5px;
+}
+.v-orderedlayout-margin-left,
+.v-horizontallayout-margin-left,
+.v-verticallayout-margin-left {
+	padding-left: 5px;
+}
+
+/* Red background panels for debugging only! */
+.v-horizontallayout-debug,
+.v-verticallayout-debug {
+	background: red;
+}
+

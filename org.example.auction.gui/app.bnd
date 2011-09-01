@@ -1,0 +1,7 @@
+Private-Package: org.example.trader.gui.app,\
+	org.example.trader.gui.tradetab
+Service-Component: *
+Include-Resource: images=images,\
+	VAADIN/themes/masterclass/=theme
+Vaadin-Themes: masterclass
+Export-Package: org.example.trader.gui.api

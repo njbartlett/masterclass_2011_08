@@ -1,0 +1,5 @@
+-include: base-test.bndrun
+
+-runfw: org.eclipse.osgi
+-runvm: -ea
+-runsystempackages: sun.reflect

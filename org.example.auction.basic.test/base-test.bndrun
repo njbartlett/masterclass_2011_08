@@ -1,0 +1,9 @@
+-runbundles:\
+	org.example.auction.basic.test;version=latest,\
+	org.mockito.mockito-all,\
+	org.example.auction.basic;version=latest,\
+	org.example.auction.api;version=latest,\
+	org.apache.felix.scr,\
+	osgi.cmpn,\
+	org.apache.felix.shell,\
+	org.apache.felix.shell.tui
